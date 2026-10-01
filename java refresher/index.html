@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <script>
+        // let a=45;
+        // let b='this is me';
+        // const c=90;
+        // console.log(a);
+        // Numbers
+        // objects
+        // booleans - tru/false
+        // String
+        // undefined
+        // null
+
+
+        // function hello(){
+        //     console.log("hey Durgesh");
+        // }
+        // let obja={
+        //     r:67,
+        //     m:90,
+        //     func: function myfunc(number){
+        //         console.log("the number is "+ number); 
+        //     }
+        // }
+        //  document.addEventListener("click",function click(){
+        //     console.log("clicked");
+        //     alert('hello')
+        //     let conf=confirm("Are you sure");
+        //     console.log(conf)
+        //  })
+        // let arr=[23,45,76,54,21];
+        // for(let i=0;i<array.length;i++){
+        //     const element =array[i];
+        // }
+        let arr=[23,45,76,54,21];
+        console.log(this);
+        // function myfunc(number){
+        //     console.log("the number is "+ this);
+        // }
+        // myfunc();
+        let mobj={
+            a:this,
+            myfunc:function(number){
+                console.log(this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        // callback is a which type of function then he invoked when function is already execute one time 
+        setTimeout(()=>{
+            console.log("yayy");
+        },2000);
+        console.log("main neche wali script hoon");
+    </script>
+</head>
+<body>
+    <h1>  I am learning js</h1>
+</body>
+</html>
